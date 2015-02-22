@@ -1,12 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## The makeCacheMatrix function creates a special "vector", which is really a list containing a function to
 ##set the value of the matrix
 ##get the value of the matrix
-##set the value of the mean
-##get the value of the mean
-
+##set the value of the inverse matrix
+##get the value of the inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
     set <- function(y) {
@@ -22,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##  calculates the inverse of a square matrix contained in  the special "vector" created with 
+##  The cacheSolve function calculates the inverse of a square matrix contained in  the special "vector" created with 
 ##the above function. However, it first checks to see if the inverse has already been calculated. 
 ##If so, it gets the inverse from the cache and skips the computation. Otherwise, it calculates 
 ##the inverse of the data and sets the value of the inverse in the cache via the setinverse function.
